@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.d-flex {
+    display: flex !important;
+}
+
+.gap-5 {
+    gap: 4.8rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 1.6rem !important;
+}
+
+@media (max-width: 47.99875em) {
+    .justify-center--md {
+        justify-content: center;
+    }
+}

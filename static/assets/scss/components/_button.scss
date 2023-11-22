@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    background-color: var(--btn, #1b1a1a);
+    border-radius: .6rem;
+    color: var(--btn-color, #fff);
+    cursor: pointer;
+    transition: background .4s;
+
+    &:hover,
+    &:focus {
+        --btn: #000;
+    }
+}

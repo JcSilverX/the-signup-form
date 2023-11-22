@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+.footer {
+    min-height: 6.5rem;
+
+    background: #0e0e0e;
+    display: grid;
+    place-items: center;
+}

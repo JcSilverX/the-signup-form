@@ -1,0 +1,33 @@
+{
+  "name": "the-signup-form",
+  "version": "1.0.0",
+  "description": "The signup form",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map static/assets/scss/style.scss static/assets/css/style.css",
+    "build:compile": "sass --no-source-map static/assets/scss/style.scss build/css/compiled.css",
+    "build:prefixes": "postcss build/css/compiled.css --use autoprefixer --output build/css/prefixed.css",
+    "build:optimize": "csso build/css/prefixed.css --output build/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JcSilverX/the-signup-form.git"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "JcSilverX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JcSilverX/the-signup-form/issues"
+  },
+  "homepage": "https://github.com/JcSilverX/the-signup-form#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "csso-cli": "^4.0.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.69.5"
+  }
+}

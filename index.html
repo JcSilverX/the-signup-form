@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Sign-up Form</title>
+
+        <link rel="stylesheet" href="build/css/style.css">
+    </head>
+    <body class="signup">
+    
+        <div class="signup__app">
+            <section class="bcontainer">
+
+                <header class="header">
+                    <a href="." class="logo">
+                        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="The Odin Project Logo" class="logo__img" />
+                    </a>
+                </header>
+
+                <div class="banner">
+                    <img src="https://images.unsplash.com/photo-1527842891421-42eec6e703ea?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="banner__img" />
+                </div>
+
+                <footer class="footer">
+                    <div class="copyright">
+                        &copy;
+                        2023 Copyright
+                        <a href="#!">JcSilverX</a>
+                    </div>
+                </footer>
+            </section>
+            <section class="main-content">
+                <section class="signup-form-container">
+                    <h1 style="margin-bottom: 1.6rem; font-size: 2rem;">Sign up</h1>
+
+                    <form method="POST" action="#" class="form d-flex justify-center-md gap-5">
+                        <div>
+                            <div>
+                                <label for="id_fname" class="form__label">FIRST NAME</label>
+                                <input type="text" name="id_fname" id="id_fname" class="form__input" value="Taurus" />
+                            </div>
+                            <div>
+                                <label for="id_email" class="form__label">EMAIL</label>
+                                <input type="email" name="id_email" id="id_email" class="form__input" />
+                            </div>
+                            <div class="input-container" data-jsx-error="* Passwords do not match.">
+                                <label for="id_password" class="form__label">PASSWORD</label>
+                                <input type="password" name="id_password" id="id_password" value="ok" class="form__input" />
+                            </div>
+
+                            <div class="mb-5">
+                                <button type="submit" class="btn">Create Account</button>
+                            </div>
+
+                            <div>
+                                Already have an account? <a href="#!">Log in</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="id_lname" class="form__label">LAST NAME</label>
+                                <input type="tel" name="id_lname" id="id_lname" class="form__input" value="Silver" autofocus />
+                            </div>
+                            <div>
+                                <label for="id_pnumber" class="form__label">PHONE NUMBER</label>
+                                <input type="tel" name="id_pnumber" id="id_pnumber" class="form__input" />
+                            </div>
+                            <div class="input-container" data-jsx-error="">
+                                <label for="id_cpassword" class="form__label">CONFIRM PASSWORD</label>
+                                <input type="password" name="id_cpassword" id="id_cpassword" class="form__input" />
+                            </div>
+                        </div>
+
+                    </form>
+
+                </section>
+            </section>
+        </div>
+
+    </body>
+</html>
